@@ -1,0 +1,17 @@
+/* 기본 스타일 */
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+/* 하이퍼링크 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* svg 이미지 (반응형) */
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

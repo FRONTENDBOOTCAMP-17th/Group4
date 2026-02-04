@@ -1,4 +1,5 @@
 @import url('./styles/theme.css');
 @import url('./styles/base.css');
 @import url('./styles/modern-reset.css');
+@import url('/src/styles/templates/apply-template.css');
 @import url('./styles/about.css');

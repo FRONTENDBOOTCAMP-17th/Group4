@@ -1,6 +1,8 @@
 /* 기본 스타일 */
 body {
-  font-family: 'SUIT Variable', sans-serif;
+  font-family: 'Pretendard', sans-serif;
+  line-height: 1.15;
+  margin: 0;
 }
 
 /* 하이퍼링크 */
@@ -14,4 +16,18 @@ svg {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
 }

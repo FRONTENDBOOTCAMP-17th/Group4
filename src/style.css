@@ -1,11 +1,4 @@
-/* CSS 스타일을 작성해 주세요. */
-.project-header {
-  font-size: 40px;
-  margin-block-end: 10px;
-}
-
-.project-members {
-  padding: 20px;
-  border: 1px solid #121212;
-  border-radius: 5px;
-}
+@import url('./styles/theme.css');
+@import url('./styles/base.css');
+@import url('./styles/modern-reset.css');
+@import url('./styles/about.css');

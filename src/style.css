@@ -12,3 +12,14 @@
 @import url('./styles/templates/apply-template.css');
 @import url('./styles/about.css');
 @import url('./styles/templates/banner.css');
+
+.template-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media (width >= 1280px) {
+    .about-card-wrapper {
+      order: -1;
+    }
+  }
+}

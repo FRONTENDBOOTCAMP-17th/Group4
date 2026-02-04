@@ -1,0 +1,17 @@
+.link-button-component {
+  padding: 0.25rem;
+  color: var(--contents-content-primary);
+  border-bottom: 1px solid var(--contents-content-tertiary);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  &:hover {
+    border-bottom: 1px solid var(--contents-content-primary);
+  }
+
+  &:focus {
+    border: none;
+    outline: var(--accent) solid 2px;
+  }
+}

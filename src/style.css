@@ -10,3 +10,4 @@
 /* 레이아웃(템플릿) */
 @import url('/src/styles/templates/apply-template.css');
 @import url('./styles/about.css');
+@import url('./styles/templates/banner.css');

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apply Template</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="input-wrapper">
+      <label for="form-input-0" class="sr-only"></label>
+      <input type="text" name="user-input" id="form-input-0" aria-errormessage="error-messge-0" placeholder="placeholder" />
+      <button type="button" class="show-pw"></button>
+      <span id="error-messge-0" class="error-message">Hint Place</span>
+    </div>
+    <a href="/" class="link">링크</a>
+    <hr />
+    <div class="apply-template">
+      <h1 class="apply-header">UT로 운행하기</h1>
+      <form action="#" class="apply-form">
+        <fieldset>
+          <legend>기사로 가입하기</legend>
+          <div class="input-wrapper">
+            <label for="form-input-1" class="sr-only">이름</label>
+            <input type="text" name="user-first-name" id="form-input-1" aria-errormessage="error-messge-1" placeholder="이름" />
+            <span id="error-messge-1" class="error-message">Hint Place</span>
+          </div>
+          <div class="input-wrapper">
+            <label for="form-input-2" class="sr-only">성</label>
+            <input type="text" name="user-last-name" id="form-input-2" aria-errormessage="error-messge-2" placeholder="성" />
+            <span id="error-messge-2" class="error-message">Hint Place</span>
+          </div>
+          <div class="input-wrapper">
+            <label for="form-input-3" class="sr-only">이메일</label>
+            <input type="email" name="user-email" id="form-input-3" aria-errormessage="error-messge-3" placeholder="이메일" />
+            <span id="error-messge-3" class="error-message">Hint Place</span>
+          </div>
+          <div class="input-wrapper">
+            <label for="form-input-4" class="sr-only">비밀번호</label>
+            <input type="password" name="user-password" id="form-input-4" aria-errormessage="error-messge-4" placeholder="비밀번호" />
+            <button type="button" class="show-pw"></button>
+            <span id="error-messge-4" class="error-message">Hint Place</span>
+          </div>
+          <div class="input-wrapper">
+            <label for="form-input-5" class="sr-only">전화번호</label>
+            <input type="tel" name="user-phone" id="form-input-5" aria-errormessage="error-messge-5" placeholder="전화번호" />
+            <span id="error-messge-5" class="error-message">Hint Place</span>
+          </div>
+          <div class="input-wrapper">
+            <label for="form-input-6" class="sr-only">주소</label>
+            <input type="text" name="user-address" id="form-input-6" class="user-address" aria-errormessage="error-messge-6" placeholder="주소" value="Seoul, Korea, Republic of (South Korea)" />
+            <span id="error-messge-6" class="error-message">Hint Place</span>
+          </div>
+        </fieldset>
+        <a href="/" class="detail-link link">자세히보기</a>
+        <p class="caution">‘계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그 제휴가(통칭하여 ‘UT’)가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 발신하는 전화나 SMS 메시지를 수신하는 데 동의합니다. 마케팅 메시지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지 수신을 원하지 않으시는 경우, 89203번으로 ‘STOP’이라고 문자 메시지를 보내 수신을 거부하실 수 있습니다.</p>
+        <div class="login-wrapper">
+          <button type="submit" class="sign-up-button">가입하기</button>
+          <span class="login-label">이미 계정이 있으신가요?</span>
+          <a href="/" class="link">로그인</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

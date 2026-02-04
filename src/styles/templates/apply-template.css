@@ -1,75 +1,4 @@
-.apply-header {
-  font-size: var(--heading-xxl);
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-.input-wrapper {
-  block-size: 70px;
-  display: grid;
-  grid-template-rows: 50px minmax(20px, 1fr);
-
-  input {
-    block-size: 50px;
-    padding: 0 0.75rem;
-    border: 1px solid var(--border-border-transparent);
-    color: var(--contents-content-primary);
-    background: var(--tertiary);
-    outline: none;
-    font-size: 1rem;
-    grid-column: 1;
-    grid-row: 1/2;
-
-    &::placeholder {
-      color: var(--contents-content-secondary);
-    }
-
-    &:focus {
-      outline: 2px solid var(--contents-content-primary);
-    }
-
-    &:user-valid {
-      outline: 2px solid var(--positive);
-      background: var(--positive-transparent);
-    }
-
-    &:user-invalid {
-      outline: 2px solid var(--negative);
-      background: var(--negative-tranparent);
-
-      & ~ .error-message {
-        display: inline-block;
-        color: var(--negative);
-      }
-    }
-  }
-
-  .user-address {
-    font-weight: 600;
-    line-height: 1.5;
-  }
-
-  button {
-    inline-size: 24px;
-    block-size: 24px;
-    padding: 0;
-    margin-inline-end: 0.75rem;
-    border: 0;
-    place-self: center end;
-    grid-column: 1;
-    grid-row: 1/2;
-  }
-
-  .show-pw {
-    background: url(/assets/show-pw.svg);
-  }
-
-  .error-message {
-    display: none;
-    font-size: var(--label-small);
-    color: var(--secondary);
-  }
-}
+@import url(/src/styles/components/input-component.css);
 
 .link {
   padding: 0.25rem;
@@ -80,12 +9,6 @@
   line-height: 1.5;
 }
 
-.caution {
-  font-size: var(--label-small);
-  line-height: 1.6;
-  color: var(--contents-content-primary);
-}
-
 .sign-up-button {
   inline-size: max-content;
   padding: 1rem 1.5rem;
@@ -94,10 +17,6 @@
   line-height: 1.5;
   color: var(--secondary);
   background: var(--primary);
-}
-
-.login-label {
-  font-size: var(--label-small);
 }
 
 .apply-template {
@@ -112,6 +31,10 @@
 
   .apply-header {
     grid-column: 1/5;
+    font-size: var(--heading-xxl);
+    font-weight: 700;
+    line-height: 1.4;
+
     @media (width >= 1280px) {
       grid-column: 1 / span 2;
       place-self: center start;
@@ -155,7 +78,7 @@
     }
   }
 
-  .input-wrapper {
+  .input-component {
     grid-column: 1 / span 2;
 
     @media (width >= 1280px) {
@@ -179,6 +102,9 @@
   }
 
   .caution {
+    font-size: var(--label-small);
+    line-height: 1.6;
+    color: var(--contents-content-primary);
     margin-block-start: 1rem;
     grid-column: 1 / span 2;
 
@@ -196,6 +122,7 @@
     }
 
     .login-label {
+      font-size: var(--label-small);
       margin-inline-start: 2.25rem;
       margin-inline-end: 1rem;
     }

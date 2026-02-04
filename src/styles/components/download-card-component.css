@@ -1,0 +1,32 @@
+.download-card-component {
+  background: var(--secondary);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  inline-size: clamp(340px, 100%, 527px);
+  block-size: clamp(168px, 100%, 192px);
+  color: var(--contents-content-primary);
+  padding: 2.75rem;
+  column-gap: 2.25rem;
+
+  .card-content {
+    display: contents;
+  }
+
+  .card-logo {
+    inline-size: 104px;
+    aspect-ratio: 1/1;
+  }
+
+  .card-text {
+    font-size: var(--label-large);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .card-arrow-icon {
+    inline-size: 56px;
+    aspect-ratio: 1/1;
+    margin-inline-start: auto;
+  }
+}

@@ -1,24 +1,41 @@
 .icon-button-component {
+  background-color: var(--primary, #000);
+  width: 149px;
+  height: 56px;
   display: flex;
-  flex-flow: row nowrap;
-  min-inline-size: max-content;
-  padding: 1rem 1.5rem;
-  border: 0;
-  font-size: var(--label-medium);
-  font-weight: 600;
-  line-height: 1.5;
-  color: var(--secondary);
-  background: var(--primary);
-  align-content: center;
-  gap: 4px;
+  place-content: center;
+  line-height: 150%;
 
-  &:hover,
-  &:disabled {
-    background: var(--contents-content-secondary);
-  }
+  .download-app {
+    color: var(--secondary, #fff);
+    background: transparent;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 16px 24px;
+    white-space: nowrap;
+    align-items: center;
+    inline-size: 100%;
+    gap: 4px;
 
-  &:focus {
-    outline: var(--accent) solid 2px;
+    svg {
+      inline-size: 24px;
+      block-size: 24px;
+      pointer-events: none;
+      flex-shrink: 0;
+    }
+    &:hover {
+      background: var(--contents-contentSecondary, #6b6b6b);
+    }
+
+    &:focus {
+      outline: 2px solid var(--accent, #276ef1);
+      outline-offset: -1px;
+    }
+
+    &:disabled {
+      background: var(--contents-contentSecondary, #6b6b6b);
+      cursor: not-allowed;
+    }
   }
 
   svg,

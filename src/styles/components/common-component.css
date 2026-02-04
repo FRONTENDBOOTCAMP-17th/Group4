@@ -107,7 +107,7 @@
 
   .lang-btn {
     display: flex;
-    align-items: center
+    align-items: center;
     gap: 4px;
     padding: 2px;
     border: 0;

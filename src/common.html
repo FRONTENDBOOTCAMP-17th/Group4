@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>common 컴포넌트 | UT</title>
+    <link rel="stylesheet" href="./styles/components/common-component.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Common/menu  -->
+    <div class="common-menu">
+      <a href="#" class="common-menu-title">기업 정보</a>
+      <button class="drop-down" aria-label="하위 메뉴 열기" aria-expanded="false">
+        <svg class="icon-down" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M18 9L12 15L6 9" stroke="white" stroke-width="2" />
+        </svg>
+
+        <svg class="icon-up" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M18 15L12 9L6 15" stroke="white" stroke-width="2" />
+        </svg>
+      </button>
+    </div>
+    <hr />
+    <!-- Common/Logo -->
+    <div class="logo-wrapper">
+      <div class="logo-u">
+        <svg width="95" height="104" viewBox="0 0 95 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M69.12 0V80.5171H25.6013V0H0V60.3917C0 87.6902 19.9373 103.169 47.3587 103.169C74.7802 103.169 94.7174 87.6902 94.7174 60.3917V0H69.12Z" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="logo-t">
+        <svg width="98" height="23" viewBox="0 0 98 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="t-top">
+          <path d="M97.2787 0H0V22.6483H97.2787V0Z" fill="url(#paint0_linear_101_1631)" />
+          <defs>
+            <linearGradient id="paint0_linear_101_1631" x1="0.618355" y1="11.3221" x2="97.2498" y2="11.3221" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#65C081" />
+              <stop offset="0.0637" stop-color="#62B68B" />
+              <stop offset="0.2224" stop-color="#5AA49E" />
+              <stop offset="0.3821" stop-color="#5495AB" />
+              <stop offset="0.5406" stop-color="#5089B3" />
+              <stop offset="0.6972" stop-color="#4D80B8" />
+              <stop offset="0.8513" stop-color="#4B7BBB" />
+              <stop offset="1" stop-color="#497ABD" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg width="26" height="78" viewBox="0 0 26 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="t-bottom">
+          <path d="M25.6013 0H0V78.0058H25.6013V0Z" fill="url(#paint0_linear_101_1630)" />
+          <defs>
+            <linearGradient id="paint0_linear_101_1630" x1="12.8" y1="78.5728" x2="12.8" y2="1.8442" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#EF5394" />
+              <stop offset="0.65" stop-color="#8B52A0" />
+              <stop offset="1" stop-color="#5D4EA1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <hr />
+    <!-- Common/Lang -->
+    <div class="lang-wrapper">
+      <button type="button" class="lang-btn" aria-label="언어 선택 메뉴" aria-haspopup="listbox" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M19.5 6L18.0333 7.1C17.6871 7.35964 17.2661 7.5 16.8333 7.5H13.475C12.8775 7.5 12.3312 7.83761 12.064 8.37206C11.7342 9.03161 11.9053 9.83161 12.476 10.2986L14.476 11.9349C16.0499 13.2227 16.8644 15.22 16.6399 17.2412L16.6199 17.4206C16.5403 18.1369 16.3643 18.8392 16.0967 19.5083L15.5 21" stroke="currentColor" />
+          <path d="M2.5 10.5L5.7381 9.96032C7.09174 9.73471 8.26529 10.9083 8.03968 12.2619L7.90517 13.069C7.66434 14.514 8.3941 15.9471 9.70437 16.6022C10.7535 17.1268 11.2976 18.3097 11.0131 19.4476L10.5 21.5" stroke="currentColor" />
+          <circle cx="12" cy="12" r="9.5" stroke="currentColor" />
+        </svg>
+        <span class="lang-text">TEXT</span>
+      </button>
+    </div>
+    <hr />
+
+    <!-- Common/Sign -->
+    <button class="sign" type="submit">가입하기</button>
+  </body>
+</html>

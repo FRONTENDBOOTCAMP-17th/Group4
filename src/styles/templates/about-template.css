@@ -1,0 +1,32 @@
+/* 레이아웃 */
+.about-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 48px;
+}
+
+/* 태블릿 */
+@media (min-width: 640px) {
+  .about-card-wrapper {
+    flex-flow: nowrap row;
+    padding: 56px 32px;
+  }
+  .about-card {
+    inline-size: 375px;
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  .about-card-wrapper {
+    gap: 36px;
+    padding: 64px;
+    min-inline-size: 350px;
+  }
+  .about-card {
+    inline-size: 558px;
+  }
+}

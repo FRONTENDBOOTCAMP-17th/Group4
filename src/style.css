@@ -7,11 +7,13 @@
 @import url('./styles/components/link-button-component.css');
 @import url('./styles/components/icon-button-component.css');
 @import url('./styles/components/download-card-component.css');
+@import url('./styles/components/about-card-component.css');
+@import url('./styles/components/accordion-components.css');
 /* 레이아웃(템플릿) */
 @import url('./styles/templates/download-template.css');
 @import url('./styles/templates/apply-template.css');
-@import url('./styles/about.css');
-@import url('./styles/templates/banner.css');
+@import url('./styles/templates/about-template.css');
+@import url('./styles/templates/banner-template.css');
 
 .template-container {
   display: flex;

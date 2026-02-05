@@ -26,9 +26,6 @@
     align-items: center;
     column-gap: 1rem;
     grid-column: 3 / span 2;
-
-    @media (width >= 1280px) {
-    }
   }
 
   fieldset {
@@ -43,7 +40,7 @@
     line-height: 1.5;
 
     @media (width >= 1280px) {
-      grid-column: 3 / span 1;
+      grid-column: 1 / span 1;
     }
   }
 
@@ -61,21 +58,21 @@
     grid-column: 1 / span 2;
 
     @media (width >= 1280px) {
-      grid-column: 3 / span 2;
+      grid-column: 1 / span 4;
     }
 
     &:nth-child(2) {
       grid-column: 1 / span 1;
 
       @media (width >= 1280px) {
-        grid-column: 3 / span 1;
+        grid-column: 1 / span 2;
       }
     }
     &:nth-child(3) {
       grid-column: 2 / span 1;
 
       @media (width >= 1280px) {
-        grid-column: 4 / span 1;
+        grid-column: 3 / span 2;
       }
     }
   }
@@ -88,7 +85,7 @@
     grid-column: 1 / span 2;
 
     @media (width >= 1280px) {
-      grid-column: 3 / span 2;
+      grid-column: 1 / span 4;
     }
   }
 
@@ -97,10 +94,10 @@
     flex-flow: row nowrap;
     align-items: center;
     margin-block-start: 2.25rem;
-    grid-column: 1/5;
+    grid-column: 1 / span 2;
 
     @media (width > 1280px) {
-      grid-column: 3/5;
+      grid-column: 1 / span 4;
     }
 
     .login-label {

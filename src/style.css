@@ -16,6 +16,7 @@
 @import url('./styles/templates/about-template.css');
 @import url('./styles/templates/banner-template.css');
 @import url('./styles/templates/accordion-template.css');
+@import url('./styles/templates/nav-template.css');
 
 .template-container {
   display: flex;

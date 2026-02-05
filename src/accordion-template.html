@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>아코디언 컴포넌트</title>
     <link rel="stylesheet" href="./styles/components/accordion-components.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <script type="module" src="/src/javascripts/accordion-components.js"></script>
   </head>
   <body>
-    <section id="accordion-components-wrap">
-      <h3>자주 하는 질문</h3>
-      <div class="accordion-components">
-        <button type="button" class="accordion-head" aria-expanded="false" role="list">미터기 요금을 중복으로 결제하였습니다 (앱+현장)</button>
-        <div class="accordion-body" hidden>
+    <section id="accordion-components-wrap" role="region" aria-labelledby="faq-title">
+      <h3 id="faq-title" class="accordion-title">자주 하는 질문</h3>
+      <div class="accordion-components" role="group">
+        <button type="button" class="accordion-head" aria-expanded="false" aria-controls="faq1">미터기 요금을 중복으로 결제하였습니다 (앱+현장)</button>
+        <div id="faq1" class="accordion-body" hidden>
           <div class="accordion-body-inner">
             <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
             <ol>
@@ -26,9 +26,9 @@
           </div>
         </div>
       </div>
-      <div class="accordion-components">
-        <button type="button" class="accordion-head" aria-expanded="false" role="list">미터기 요금 외에 다른 요금이 결제 됐습니다. (통행료, 가승인 등)</button>
-        <div class="accordion-body" hidden>
+      <div class="accordion-components" role="group">
+        <button type="button" class="accordion-head" aria-expanded="false" aria-controls="faq2">미터기 요금 외에 다른 요금이 결제 됐습니다. (통행료, 가승인 등)</button>
+        <div id="faq2" class="accordion-body" hidden>
           <div class="accordion-body-inner">
             <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
             <ol>
@@ -41,9 +41,9 @@
           </div>
         </div>
       </div>
-      <div class="accordion-components">
-        <button type="button" class="accordion-head" aria-expanded="false" role="list">분실물과 관련해 기사에게 연락하기</button>
-        <div class="accordion-body" hidden>
+      <div class="accordion-components" role="group">
+        <button type="button" class="accordion-head" aria-expanded="false" aria-controls="faq3">분실물과 관련해 기사에게 연락하기</button>
+        <div id="faq3" class="accordion-body" hidden>
           <div class="accordion-body-inner">
             <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
             <ol>
@@ -56,9 +56,9 @@
           </div>
         </div>
       </div>
-      <div class="accordion-components">
-        <button type="button" class="accordion-head" aria-expanded="false" role="list">택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요.</button>
-        <div class="accordion-body" hidden>
+      <div class="accordion-components" role="group">
+        <button type="button" class="accordion-head" aria-expanded="false" aria-controls="faq4">택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요.</button>
+        <div id="faq4" class="accordion-body" hidden>
           <div class="accordion-body-inner">
             <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
             <ol>
@@ -71,9 +71,9 @@
           </div>
         </div>
       </div>
-      <div class="accordion-components">
-        <button type="button" class="accordion-head" aria-expanded="false" role="list">프로모션 코드가 적용되지 않았습니다.</button>
-        <div class="accordion-body" hidden>
+      <div class="accordion-components" role="group">
+        <button type="button" class="accordion-head" aria-expanded="false" aria-controls="faq5">프로모션 코드가 적용되지 않았습니다.</button>
+        <div id="faq5" class="accordion-body" hidden>
           <div class="accordion-body-inner">
             <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
             <ol>

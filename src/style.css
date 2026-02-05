@@ -9,19 +9,37 @@
 @import url('./styles/components/download-card-component.css');
 @import url('./styles/components/about-card-component.css');
 @import url('./styles/components/accordion-components.css');
+@import url('./styles/components/footer-component.css');
+@import url('./styles/components/common-component.css');
 /* 레이아웃(템플릿) */
 @import url('./styles/templates/download-template.css');
 @import url('./styles/templates/apply-template.css');
 @import url('./styles/templates/about-template.css');
 @import url('./styles/templates/banner-template.css');
+@import url('./styles/templates/accordion-template.css');
+@import url('./styles/templates/nav-template.css');
+@import url('./styles/templates/footer-template.css');
 
 .template-container {
   display: flex;
   flex-flow: column nowrap;
 
   @media (width >= 1280px) {
+    .nav-contents-wrapper {
+      order: -1;
+    }
+
     .about-card-wrapper {
       order: -1;
+    }
+
+    .banner,
+    .about-card-wrapper,
+    .download-template,
+    #accordion-components-wrap,
+    .apply-template,
+    .footer {
+      padding-inline: 10vw;
     }
   }
 }

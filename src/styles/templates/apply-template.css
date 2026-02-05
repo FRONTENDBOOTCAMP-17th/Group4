@@ -40,7 +40,7 @@
     line-height: 1.5;
 
     @media (width >= 1280px) {
-      grid-column: 1 / span 1;
+      grid-column: 1 / span 2;
     }
   }
 

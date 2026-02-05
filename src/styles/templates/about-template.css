@@ -1,7 +1,7 @@
 /* 레이아웃 */
 .about-card-wrapper {
+  inline-size: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 24px;
@@ -15,18 +15,17 @@
     padding: 56px 32px;
   }
   .about-card {
-    inline-size: 375px;
+    inline-size: 100%;
   }
 }
 
 /* 데스크탑 */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .about-card-wrapper {
     gap: 36px;
     padding: 64px;
-    min-inline-size: 350px;
   }
   .about-card {
-    inline-size: 558px;
+    inline-size: 100%;
   }
 }

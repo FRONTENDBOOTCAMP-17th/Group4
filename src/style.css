@@ -25,20 +25,11 @@
   flex-flow: column nowrap;
 
   @media (width >= 1280px) {
-    .nav-contents-wrapper {
-      order: -1;
-    }
-
-    .about-card-wrapper {
-      order: -1;
-    }
-
-    .banner,
+    .banner-wrap,
     .about-card-wrapper,
     .download-template,
     #accordion-components-wrap,
-    .apply-template,
-    .footer {
+    .apply-template {
       padding-inline: 10vw;
     }
   }

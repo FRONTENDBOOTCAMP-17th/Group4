@@ -1,1 +1,1 @@
-import "./style.css"
+import './javascripts/input-component.js';

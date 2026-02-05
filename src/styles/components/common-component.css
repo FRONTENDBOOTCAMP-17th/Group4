@@ -1,5 +1,4 @@
 .common-menu {
-  margin: 20px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +8,16 @@
   background: var(--primary);
   color: var(--secondary);
 
+  &:has(.drop-down) {
+    padding: 4px 8px 4px 4px;
+  }
+
+  &:not(.drop-down) {
+    .dropdown-btn {
+      display: none;
+    }
+  }
+
   .common-menu-title {
     font-size: var(--label-medium);
     font-weight: 600;
@@ -16,7 +25,7 @@
     padding: 4px;
   }
 
-  .drop-down {
+  .dropdown-btn {
     display: flex;
     inline-size: 24px;
     block-size: 24px;
@@ -37,15 +46,18 @@
     }
   }
 
-  &.default {
-    .drop-down {
-      padding: 4px 8px 4px 4px;
-    }
-  }
-
   &.open {
     border-radius: 22px;
     background: var(--contents-content-tertiary);
+
+    .drop-down {
+      .icon-down {
+        display: none;
+      }
+      .icon-up {
+        display: block;
+      }
+    }
   }
 
   &:focus-within {
@@ -56,27 +68,21 @@
 
 /* Logo */
 .logo-wrapper {
-  inline-size: 192px;
-  block-size: 192px;
+  --logo-size: 192px;
+
+  inline-size: var(--logo-size);
+  block-size: var(--logo-size);
   display: flex;
   gap: 0;
   margin: 8px;
-  padding-block: 44.4px;
+  padding-block: calc(var(--logo-size) * 0.23125);
 
+  color: currentColor;
   .logo-u {
     flex: 0 0 50%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
-    &.dark {
-      color: var(--white);
-    }
-
-    svg {
-      inline-size: auto;
-      display: block;
-    }
   }
 
   .logo-t {
@@ -84,17 +90,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    overflow: hidden;
-    margin-inline-start: -1px;
+    block-size: 100%;
 
     .t-top {
       block-size: auto;
+      flex-shrink: 0;
     }
 
     .t-bottom {
       inline-size: auto;
-      margin-block-start: -0.5px;
+      margin-block-start: -1px;
     }
   }
 }

@@ -62,5 +62,6 @@
     display: none;
     font-size: var(--label-small);
     color: var(--secondary);
+    margin-block-start: 0.125rem;
   }
 }

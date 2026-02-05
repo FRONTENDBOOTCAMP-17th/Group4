@@ -1,7 +1,7 @@
 /* 레이아웃 */
 .about-card-wrapper {
   inline-size: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 24px;
@@ -20,7 +20,7 @@
 }
 
 /* 데스크탑 */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .about-card-wrapper {
     gap: 36px;
     padding: 64px;

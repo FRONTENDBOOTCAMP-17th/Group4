@@ -87,7 +87,7 @@
 /* 데스크탑  */
 @media (min-width: 1280px) {
   .nav-contents-wrapper .contents {
-    margin: 12px 136px;
+    margin: 12px auto;
     padding: 12px 64px;
 
     .main-group {

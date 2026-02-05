@@ -14,6 +14,7 @@
 @import url('./styles/templates/apply-template.css');
 @import url('./styles/templates/about-template.css');
 @import url('./styles/templates/banner-template.css');
+@import url('./styles/templates/qna-template.css');
 
 .template-container {
   display: flex;

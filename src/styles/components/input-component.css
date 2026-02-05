@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: 50px minmax(20px, 1fr);
 
-  input {
+  .form-input {
     block-size: 50px;
     padding: 0 0.75rem;
     border: 1px solid var(--border-border-transparent);
@@ -43,19 +43,21 @@
     line-height: 1.5;
   }
 
-  button {
+  input[type='checkbox'] {
+    appearance: none;
     inline-size: 24px;
     block-size: 24px;
     padding: 0;
     margin-inline-end: 0.75rem;
     border: 0;
+    background: url(/assets/show-pw.svg);
     place-self: center end;
     grid-column: 1;
     grid-row: 1/2;
-  }
 
-  .show-pw {
-    background: url(/assets/show-pw.svg);
+    &:checked {
+      background: url(/assets/hide-pw.svg);
+    }
   }
 
   .error-message {

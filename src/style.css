@@ -10,6 +10,7 @@
 @import url('./styles/components/about-card-component.css');
 @import url('./styles/components/accordion-components.css');
 @import url('./styles/components/footer-component.css');
+@import url('./styles/components/common-component.css');
 /* 레이아웃(템플릿) */
 @import url('./styles/templates/download-template.css');
 @import url('./styles/templates/apply-template.css');

@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: row nowrap;
   min-inline-size: max-content;
+  inline-size: fit-content;
   padding: 1rem 1.5rem;
   border: 0;
   font-size: var(--label-medium);
@@ -33,5 +34,10 @@
     img {
       display: inline-block;
     }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background: var(--contents-content-secondary);
   }
 }

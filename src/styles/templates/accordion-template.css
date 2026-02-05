@@ -14,7 +14,7 @@ body #accordion-components-wrap {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   body #accordion-components-wrap {
     padding: 64px;
   }

@@ -1,0 +1,26 @@
+body #accordion-components-wrap {
+  padding: 40px 24px;
+}
+
+@media (min-width: 850px) {
+  body #accordion-components-wrap {
+    padding: 56px 32px;
+  }
+
+  #accordion-components-wrap {
+    .accordion-title {
+      font-size: 28.43px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body #accordion-components-wrap {
+    padding: 64px;
+  }
+  #accordion-components-wrap {
+    .accordion-title {
+      font-size: 37.897px;
+    }
+  }
+}

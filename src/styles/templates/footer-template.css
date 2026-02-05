@@ -7,6 +7,8 @@
 .footer-content {
   max-width: 1280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-top {
@@ -28,6 +30,7 @@
 }
 
 .footer-nav-list {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -49,9 +52,9 @@
 }
 
 .social-icon {
-  display: block;
   width: 20px;
   height: 20px;
+  display: block;
 }
 
 .footer-legal-links {

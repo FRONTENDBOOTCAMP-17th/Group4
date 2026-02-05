@@ -18,6 +18,7 @@
 @import url('./styles/templates/banner-template.css');
 @import url('./styles/templates/accordion-template.css');
 @import url('./styles/templates/nav-template.css');
+@import url('./styles/templates/footer-template.css');
 
 .template-container {
   display: flex;
@@ -30,6 +31,15 @@
 
     .about-card-wrapper {
       order: -1;
+    }
+
+    .banner,
+    .about-card-wrapper,
+    .download-template,
+    #accordion-components-wrap,
+    .apply-template,
+    .footer {
+      padding-inline: 10vw;
     }
   }
 }

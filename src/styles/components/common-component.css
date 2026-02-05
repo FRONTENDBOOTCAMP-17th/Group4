@@ -50,7 +50,7 @@
     border-radius: 22px;
     background: var(--contents-content-tertiary);
 
-    .drop-down {
+    .dropdown-btn {
       .icon-down {
         display: none;
       }

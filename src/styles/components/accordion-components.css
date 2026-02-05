@@ -1,0 +1,89 @@
+#accordion-components-wrap {
+  min-width: 300px;
+  padding: 20px;
+  background-color: transparent;
+  color: var(--contents-contentPrimary, #000);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+
+  h3 {
+    font-size: 21.328px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 36px;
+  }
+
+  .accordion-head {
+    background: transparent;
+    padding: 16px 80px 16px 24px;
+    border: none;
+    width: 100%;
+    position: relative;
+    text-align: start;
+  }
+  .accordion-head:focus-visible {
+    outline: 1px solid var(--accent, #276ef1);
+    outline-offset: -1px;
+    z-index: 1;
+  }
+
+  .accordion-head[aria-expanded='false'] {
+    border-bottom: 1px solid var(--contents-contentTertiary, #a6a6a6);
+  }
+
+  /*더보기 버튼*/
+  .accordion-head::before,
+  .accordion-head::after {
+    width: 12px;
+    height: 2px;
+    background: var(--contents-contentPrimary, #000);
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    right: 20px;
+    border-radius: 5px;
+  }
+
+  .accordion-head::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .accordion-head.open::after {
+    transform: translateY(-50%) rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-body {
+    background: transparent;
+    width: 100%;
+    font-weight: 400;
+    .accordion-body-inner {
+      padding: 24px;
+      border-bottom: 1px solid var(--border-borderTransparent, rgba(137, 137, 137, 0.3));
+    }
+  }
+  .accordion-body-inner > * {
+    margin-bottom: 24px;
+  }
+
+  ol {
+    li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: counter(item) '.';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  strong {
+    border-bottom: 1.5px solid var(--contents-contentTertiary, #a6a6a6);
+    display: inline-block;
+  }
+}

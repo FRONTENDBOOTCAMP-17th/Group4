@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  inline-size: clamp(340px, 100%, 527px);
+  inline-size: clamp(340px, 100%, 100%);
   block-size: clamp(168px, 100%, 192px);
   color: var(--contents-content-primary);
   padding: 2.75rem;

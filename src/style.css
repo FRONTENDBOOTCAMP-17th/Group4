@@ -33,12 +33,11 @@
       order: -1;
     }
 
-    .banner,
+    .banner-wrap,
     .about-card-wrapper,
     .download-template,
     #accordion-components-wrap,
-    .apply-template,
-    .footer {
+    .apply-template {
       padding-inline: 10vw;
     }
   }

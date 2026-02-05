@@ -1,0 +1,119 @@
+.nav-contents-wrapper {
+  background: var(--primary);
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+
+  .contents {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 100%;
+
+    margin-block: 12px;
+    padding-inline: 24px;
+    box-sizing: border-box;
+
+    .main-group {
+      display: flex;
+      align-items: center;
+      gap: 0;
+
+      .logo-wrapper {
+        color: var(--secondary);
+        --logo-size: 39px;
+      }
+
+      /* 메뉴 - 모바일에서 숨김 */
+      .nav-menu-wrapper {
+        display: none;
+
+        .nav-menu-list {
+          display: flex;
+        }
+      }
+    }
+
+    .sub-group {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      gap: 12px;
+
+      /* 언어 - 모바일에서 숨김 */
+      .lang-wrapper {
+        display: none;
+        color: var(--secondary);
+
+        .lang-btn {
+          color: inherit;
+          display: flex;
+          align-items: center;
+        }
+        .lang-text {
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+
+      /* 가입버튼  */
+      .sign {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+      }
+
+      /* 햄버거버튼 */
+      .menu-toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary);
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+
+        svg {
+          inline-size: 24px;
+          block-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* 데스크탑  */
+@media (min-width: 1024px) {
+  .nav-contents-wrapper .contents {
+    margin: 12px 136px;
+    padding: 12px 64px;
+
+    .main-group {
+      flex-shrink: 1;
+      gap: 25px;
+      .logo-wrapper {
+        --logo-size: 39px;
+      }
+      .nav-menu-wrapper {
+        display: flex;
+
+        .common-menu-title {
+          white-space: nowrap;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .sub-group {
+      .lang-wrapper {
+        display: inline-flex;
+      }
+      .menu-toggle-btn {
+        display: none;
+      }
+    }
+  }
+}

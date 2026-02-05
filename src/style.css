@@ -7,7 +7,9 @@
 @import url('./src/styles/components/link-button-component.css');
 @import url('./src/styles/components/icon-button-component.css');
 @import url('./src/styles/components/download-card-component.css');
+@import url('./styles/components/common-component.css');
 /* 레이아웃(템플릿) */
 @import url('/src/styles/templates/apply-template.css');
 @import url('./styles/about.css');
 @import url('./styles/templates/banner.css');
+@import url('./styles/templates/nav-template.css');
